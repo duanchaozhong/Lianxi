@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duan.lianxi.Main16Activity">
+    <main17a.carousel.CustomViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </main17a.carousel.CustomViewPager>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@mipmap/a4">
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/bottom_iv0"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerHorizontal="true"
+                        android:focusable="false"
+                        android:scaleType="centerInside"
+                        android:background="@mipmap/a1" />
+
+                    <TextView
+                        android:id="@+id/tv0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bottom_iv0"
+                        android:layout_centerHorizontal="true"
+                        android:text="消息"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onTabClicked">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/bottom_iv1"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerHorizontal="true"
+                        android:focusable="false"
+                        android:scaleType="centerInside"
+                        android:background="@mipmap/a2" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bottom_iv1"
+                        android:layout_centerHorizontal="true"
+                        android:text="发现"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bottom_reminder_cricle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@mipmap/a4"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

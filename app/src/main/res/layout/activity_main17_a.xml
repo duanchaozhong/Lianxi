@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <main17a.carousel.ChildViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </main17a.carousel.ChildViewPager>
+    <LinearLayout
+        android:id="@+id/ll_viewarea_dot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="20dp">
+    </LinearLayout>
+</LinearLayout>

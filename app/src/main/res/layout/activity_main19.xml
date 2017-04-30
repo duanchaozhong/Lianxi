@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.duan.lianxi.Main19Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <pulltorefreshlayout.PullToRefreshLayout
+            android:id="@+id/pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--必须添加下拉头-->
+            <include layout="@layout/refresh_head"/>
+            <!--ScrollView要配合PullToRefreshLayout使用必须继承Pullable接口-->
+            <o.xialahuidan.BounceScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:src="@mipmap/a1"/>
+                </LinearLayout>
+            </o.xialahuidan.BounceScrollView>
+            <!--必须添加上拉头-->
+            <include layout="@layout/load_more"/>
+        </pulltorefreshlayout.PullToRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

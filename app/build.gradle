@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.duan.lianxi"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    //安卓图形缓存库
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //数字进度条
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    //动画相关
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile project(path: ':pickerview')
+    compile project(path: ':boommenu')
+    //tablayout需要的包
+    compile 'com.android.support:design:23.4.0'
+    compile project(path: ':lclablelibrary')
+    //图片加载神器
+    compile 'com.facebook.fresco:fresco:0.5.2'
+    //图表
+    compile project(path: ':MPChartLib')
+    //百分比布局的包
+    compile 'com.android.support:percent:24.2.1'
+}

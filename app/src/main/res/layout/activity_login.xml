@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="d.shuibo.LoginActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <d.shuibo.TitanicTextView
+
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:id="@+id/startGame"
+            android:textColor="@color/purple"
+            android:textSize="26sp"
+            android:text="开始游戏"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <d.shuibo.TitanicTextView
+
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:id="@+id/startCharts"
+            android:textSize="26sp"
+            android:text="排行榜"
+            android:textColor="@color/purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/NumberProgressBar_Default"
+        custom:progress_text_size="30sp"
+        custom:progress_text_color="@color/colorAccent"
+        custom:progress_text_offset="1dp"
+        custom:progress_text_visibility="visible"
+        custom:max="100"
+        custom:progress="0"
+        android:id="@+id/number_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
