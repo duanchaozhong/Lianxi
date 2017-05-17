@@ -64,6 +64,7 @@
             android:name=".Main24Activity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name="chenjin.BannerActivity"/>
     </application>
 
 </manifest>

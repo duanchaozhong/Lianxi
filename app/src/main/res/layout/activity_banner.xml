@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <chenjin.GradationScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none" >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-            <ImageView
-                android:id="@+id/iv_banner"
-                android:scaleType="fitXY"
-                android:src="@mipmap/logo"
+
+            <android.support.v4.view.ViewPager
                 android:layout_width="match_parent"
-                android:layout_height="200dp" />
+                android:layout_height="200dp"
+                android:id="@+id/viewPager"
+                />
+
+            <chenjin.MaterialIndicator
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                style="@style/MaterialIndicator.Demo"
+                android:id="@+id/indicator"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"/>
+
             <chenjin.NoScrollListview
                 android:id="@+id/listview"
                 android:layout_width="match_parent"
@@ -26,6 +40,7 @@
             </chenjin.NoScrollListview>
         </LinearLayout>
     </chenjin.GradationScrollView>
+
     <TextView
         android:paddingBottom="10dp"
         android:id="@+id/textview"
@@ -35,5 +50,8 @@
         android:text="我是标题"
         android:textSize="18sp"
         android:textColor="@color/transparent"
-        android:background="#00000000" />
+        android:background="@color/transparent" />
+
+
+
 </RelativeLayout>

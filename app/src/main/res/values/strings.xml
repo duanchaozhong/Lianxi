@@ -56,4 +56,21 @@
     <string name="loading">正在加载...</string>
     <string name="load_succeed">加载成功</string>
     <string name="load_fail">加载失败</string>
+    <string-array name="data">
+        <item>我是第一行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+        <item>我是第二行数据</item>
+    </string-array>
 </resources>

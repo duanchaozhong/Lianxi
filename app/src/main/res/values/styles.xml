@@ -24,4 +24,9 @@
         <item name="mi_indicatorRadius">4dp</item>
         <item name="mi_indicatorColor">#ff009688</item>
     </style>
+    <style name="MaterialIndicator.Demo">
+        <item name="mi_indicatorColor">?android:attr/colorAccent</item>
+        <item name="mi_indicatorPadding">32dp</item>
+        <item name="mi_indicatorRadius">4dp</item>
+    </style>
 </resources>
