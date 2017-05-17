@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:checked="true"
+            android:icon="@drawable/gif_loading1"
+            android:title="新闻" />
+
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/gif_loading1"
+            android:title="电影" />
+
+        <item
+            android:id="@+id/nav_picture"
+            android:icon="@drawable/gif_loading1"
+            android:title="图片" />
+
+        <item
+            android:id="@+id/nav_me"
+            android:icon="@drawable/gif_loading1"
+            android:title="运动" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="游戏" />
+    </group>
+</menu>
