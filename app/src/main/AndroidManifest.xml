@@ -59,12 +59,12 @@
         <activity android:name="s.tubiao.Main20_b_bActivity" />
         <activity android:name=".Main21Activity" />
         <activity android:name=".Main22Activity" />
-        <activity android:name=".Main23Activity"/>
+        <activity android:name=".Main23Activity" />
         <activity
             android:name=".Main24Activity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name="chenjin.BannerActivity"/>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="chenjin.BannerActivity" />
+        <activity android:name=".Main25Activity"></activity>
     </application>
 
 </manifest>

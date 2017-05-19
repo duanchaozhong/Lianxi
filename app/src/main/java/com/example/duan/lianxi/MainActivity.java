@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         list.add("自定义View标签");list.add("进度条");list.add("不一样的按钮弹出动画");
         list.add("Metro UI效果");list.add("下拉回弹");list.add("边角标签");list.add("fragment");list.add("轮播");
         list.add("新闻客户端");list.add("PullToRefreshLayout");list.add("图表");list.add("百分比布局");list.add("视频播放器");
-        list.add("LitePal操作数据库");list.add("沉浸式标题");
+        list.add("LitePal操作数据库");list.add("沉浸式标题");list.add("语言切换");
         adapter=new MainAdapter(mainActivity,list);
         lv=(ListView)findViewById(R.id.lv);
         lv.setAdapter(adapter);
@@ -71,6 +71,7 @@ public class MainActivity extends Activity {
                     case 21:intent(Main22Activity.class);break;
                     case 22:intent(Main23Activity.class);break;
                     case 23:intent(Main24Activity.class);break;
+                    case 24:intent(Main25Activity.class);break;
                 }
             }
         });

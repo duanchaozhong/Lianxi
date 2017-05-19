@@ -35,12 +35,11 @@ dependencies {
     //视频播放器
     //lite数据库包
     //网络框架
-    
 
 //    classpath 'com.novoda:bintray-release'
     compile project(path: ':okhttputils')
     //充满标题栏需要的两个包
-    compile'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.daimajia.numberprogressbar:library:1.2@aar'
     compile 'com.nineoldandroids:library:2.4.0'
