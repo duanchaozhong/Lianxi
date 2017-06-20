@@ -2,54 +2,61 @@ package litepal;
 
 import org.litepal.crud.DataSupport;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by duan on 2017/5/5.
  */
 
 public class News extends DataSupport{
-    private int id;
-    private String author;
-    private double price;
-    private int pages;
+    private long id;
+
     private String name;
 
-    public double getPrice() {
-        return price;
-    }
+    private int age;
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+    private int isMale;
 
-    public int getId() {
+//    private List<Album> albums = new ArrayList<Album>();
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setPages(int pages) {
-        this.pages = pages;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int isMale() {
+        return isMale;
+    }
+
+    public void setMale(int isMale) {
+        this.isMale = isMale;
+    }
+
+ /*   public List<Album> getAlbums() {
+        return albums;
+    }
+
+    public void setAlbums(List<Album> albums) {
+        this.albums = albums;
+    }*/
 }

@@ -62,9 +62,10 @@
         <activity android:name=".Main23Activity" />
         <activity
             android:name=".Main24Activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="chenjin.BannerActivity" />
-        <activity android:name=".Main25Activity"></activity>
+        <activity android:name=".Main25Activity" />
+        <activity android:name=".Main26Activity"></activity>
     </application>
 
 </manifest>
