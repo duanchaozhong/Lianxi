@@ -34,9 +34,11 @@ public class MainActivity extends Activity {
         list.add("按钮的动画效果和弹幕效果");list.add("任务卡效果");
         list.add("TextView部分颜色，点击跳转");list.add("三级联动");
         list.add("自定义View标签");list.add("进度条");list.add("不一样的按钮弹出动画");
-        list.add("Metro UI效果");list.add("下拉回弹");list.add("边角标签");list.add("fragment");list.add("轮播");
-        list.add("新闻客户端");list.add("PullToRefreshLayout");list.add("图表");list.add("百分比布局");list.add("视频播放器");
-        list.add("LitePal操作数据库");list.add("沉浸式标题");list.add("语言切换");list.add("TabLayout");
+        list.add("Metro UI效果");list.add("下拉回弹");list.add("边角标签");list.add("fragment");
+        list.add("轮播");list.add("新闻客户端");list.add("PullToRefreshLayout");list.add("图表");
+        list.add("百分比布局");list.add("视频播放器");list.add("LitePal操作数据库");
+        list.add("沉浸式标题");list.add("语言切换");list.add("TabLayout");list.add("APP更新");
+        list.add("图片压缩"); list.add("图片点击放大缩小");
         adapter=new MainAdapter(mainActivity,list);
         lv=(ListView)findViewById(R.id.lv);
         lv.setAdapter(adapter);
@@ -73,6 +75,9 @@ public class MainActivity extends Activity {
                     case 23:intent(Main24Activity.class);break;
                     case 24:intent(Main25Activity.class);break;
                     case 25:intent(Main26Activity.class);break;
+                    case 26:intent(Main27Activity.class);break;
+                    case 27:intent(Main28Activity.class);break;
+                    case 28:intent(Main29Activity.class);break;
                 }
             }
         });

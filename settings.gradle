@@ -1,1 +1,1 @@
-include ':app', ':pickerview', ':boommenu', ':lclablelibrary', ':MPChartLib', ':okhttputils'
+include ':app', ':pickerview', ':boommenu', ':lclablelibrary', ':okhttputils', ':MPChartLib'

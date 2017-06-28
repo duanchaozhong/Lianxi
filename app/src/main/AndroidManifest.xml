@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".MyApplication"
@@ -65,7 +66,28 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="chenjin.BannerActivity" />
         <activity android:name=".Main25Activity" />
-        <activity android:name=".Main26Activity"></activity>
+        <activity android:name=".Main26Activity" />
+        <activity android:name=".Main27Activity" />
+
+        <service android:name="activity27.DownloadService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/install_file" />
+        </provider>
+
+        <activity android:name=".Main28Activity" />
+        <activity android:name=".Main29Activity" />
+        <activity
+            android:name="s.tubiao.Main20_b_cActivity"
+            android:label="@string/title_activity_main20_b_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="s.tubiao.Main20_b_dActivity"></activity>
     </application>
 
 </manifest>

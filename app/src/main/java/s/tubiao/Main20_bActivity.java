@@ -25,6 +25,7 @@ public class Main20_bActivity extends Activity {
     private TextView tv1;
     private TextView tv2;
     private TextView tv3;
+    private TextView tv4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class Main20_bActivity extends Activity {
         tv1=(TextView)findViewById(R.id.tv1);
         tv2=(TextView)findViewById(R.id.tv2);
         tv3=(TextView)findViewById(R.id.tv3);
+        tv4=(TextView)findViewById(R.id.tv4);
     }
 
     private void setListener() {
@@ -52,6 +54,20 @@ public class Main20_bActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Main20_bActivity.this,Main20_b_bActivity.class);
+                startActivity(intent);
+            }
+        });
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Main20_bActivity.this,Main20_b_cActivity.class);
+                startActivity(intent);
+            }
+        });
+        tv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Main20_bActivity.this,Main20_b_dActivity.class);
                 startActivity(intent);
             }
         });

@@ -23,6 +23,9 @@ import org.litepal.LitePal;
 
 import java.io.File;
 
+import activity27.CretinAutoUpdateUtils;
+import activity27.UpdateModel;
+
 /**
  * Created by duan on 2016/11/25.
  */
@@ -34,6 +37,16 @@ public class MyApplication extends Application {
         Fresco.initialize(this);
         //jc视频播放器需要的初始化
         initUniversalImageLoader();
+        CretinAutoUpdateUtils.Builder builder = new CretinAutoUpdateUtils.Builder()
+                .setBaseUrl("http://101.201.31.212:8016/version/checkVersion")
+                .setIgnoreThisVersion(true)
+                .setShowType(CretinAutoUpdateUtils.Builder.TYPE_DIALOG)
+                .setIconRes(R.mipmap.ic_launcher)
+                .showLog(true)
+                .setRequestMethod(CretinAutoUpdateUtils.Builder.METHOD_GET)
+                .setTransition(new UpdateModel())
+                .build();
+        CretinAutoUpdateUtils.init(builder);
     }
 
     private void initUniversalImageLoader() {

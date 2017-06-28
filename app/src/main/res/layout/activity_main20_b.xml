@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:onClick="onTabClicked"
         android:layout_marginLeft="30dp"
@@ -19,23 +19,34 @@
     <TextView
         android:id="@+id/tv2"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:onClick="onTabClicked"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/hudu"
         android:text="MPAndroidChart框架"/>
     <TextView
         android:id="@+id/tv3"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:onClick="onTabClicked"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hudu"
+        android:text="MPAndroidChart框架"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:onClick="onTabClicked"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/hudu"
         android:text="MPAndroidChart框架"/>
 </LinearLayout>

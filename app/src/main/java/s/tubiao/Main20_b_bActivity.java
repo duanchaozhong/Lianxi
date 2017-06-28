@@ -38,7 +38,7 @@ public class Main20_b_bActivity extends DemoBase implements OnChartValueSelected
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fresco.initialize(this);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+      /*  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main20_b_b);
         SimpleDraweeView sdv= (SimpleDraweeView) findViewById(R.id.sdv);
@@ -274,13 +274,18 @@ public class Main20_b_bActivity extends DemoBase implements OnChartValueSelected
         data.setValueTextSize(9f);
 
         // set data
-        mChart.setData(data);
+        mChart.setData(data);*/
     }
-
+/*
     @Override
     public void onValueSelected(Entry e, int dataSetIndex, Highlight h) {
         Log.i("Entry selected", e.toString());
         mChart.centerViewToAnimated(e.getXIndex(), e.getVal(), mChart.getData().getDataSetByIndex(dataSetIndex).getAxisDependency(), 500);
+    }*/
+
+    @Override
+    public void onValueSelected(Entry e, Highlight h) {
+
     }
 
     @Override

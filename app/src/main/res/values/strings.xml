@@ -73,4 +73,5 @@
         <item>我是第二行数据</item>
         <item>我是第二行数据</item>
     </string-array>
+    <string name="title_activity_main20_b_c">Main20_b_cActivity</string>
 </resources>

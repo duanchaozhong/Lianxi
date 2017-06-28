@@ -21,7 +21,7 @@ public class Main20_b_aActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main20_b_a);
+     /*   setContentView(R.layout.activity_main20_b_a);
         mLineChart = (LineChart) findViewById(R.id.line);
         XAxis xAxis = mLineChart.getXAxis();
         //设置X轴的文字在底部
@@ -62,6 +62,6 @@ public class Main20_b_aActivity extends Activity {
         //构建一个LineData  将dataSets放入
         LineData lineData = new LineData(xValues, dataSets);
         //将数据插入
-        mLineChart.setData(lineData);
+        mLineChart.setData(lineData);*/
     }
 }
