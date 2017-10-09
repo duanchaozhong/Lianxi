@@ -87,7 +87,8 @@
             android:name="s.tubiao.Main20_b_cActivity"
             android:label="@string/title_activity_main20_b_c"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="s.tubiao.Main20_b_dActivity"></activity>
+        <activity android:name="s.tubiao.Main20_b_dActivity" />
+        <activity android:name=".Main30Activity"></activity>
     </application>
 
 </manifest>

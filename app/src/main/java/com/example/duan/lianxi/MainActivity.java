@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
         list.add("轮播");list.add("新闻客户端");list.add("PullToRefreshLayout");list.add("图表");
         list.add("百分比布局");list.add("视频播放器");list.add("LitePal操作数据库");
         list.add("沉浸式标题");list.add("语言切换");list.add("TabLayout");list.add("APP更新");
-        list.add("图片压缩"); list.add("图片点击放大缩小");
+        list.add("图片压缩"); list.add("图片点击放大缩小");list.add("SmartRefreshLayout");
         adapter=new MainAdapter(mainActivity,list);
         lv=(ListView)findViewById(R.id.lv);
         lv.setAdapter(adapter);
@@ -78,6 +78,7 @@ public class MainActivity extends Activity {
                     case 26:intent(Main27Activity.class);break;
                     case 27:intent(Main28Activity.class);break;
                     case 28:intent(Main29Activity.class);break;
+                    case 29:intent(Main30Activity.class);break;
                 }
             }
         });

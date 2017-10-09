@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0f0f10"
     tools:context=".Main1Activity">
 
     <ImageView
@@ -37,9 +38,9 @@
         android:textColor="#ffffff"/>
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/gif_loading1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/quan"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"/>
